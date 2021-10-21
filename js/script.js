@@ -12,13 +12,16 @@ console.log(age);
 let ticket = km * 0.21; 
 console.log(ticket);
 
+// Aggiunta degli sconti
 let minor = (ticket / 100) * 20;
+minor = minor.toFixed(2);
 console.log(minor);
 
 let over = (ticket / 100) * 40;
+over = over.toFixed(2);
 console.log(over);
 
-// Aggiunta degli sconti
+// Stampa del prezzo
 if (age >= 18 && age <= 65) {
     document.getElementById("mio_id").innerHTML = `Il tuo biglietto costa: ${ticket}€`
 } else if (age < 18) {
