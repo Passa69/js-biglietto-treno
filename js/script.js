@@ -9,5 +9,7 @@ let age = parseInt(prompt("Scrivi qui la tua età: "));
 console.log(age);
 
 // Calcolo del prezzo
+let molt = km * 0.21; 
+console.log(molt);
 
 // Stampa del prezzo
