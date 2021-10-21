@@ -10,16 +10,18 @@ console.log(age);
 
 // Calcolo del prezzo
 let ticket = km * 0.21; 
-console.log(ticket);
+// console.log(ticket);
 
 // Aggiunta degli sconti
-let minor = (ticket / 100) * 20;
-minor = minor.toFixed(2);
-console.log(minor);
+let discountMinor = (ticket / 100) * 20;
+discountMinor = discountMinor.toFixed(2);
+let minor = ticket - discountMinor;
+// console.log(minor);
 
-let over = (ticket / 100) * 40;
-over = over.toFixed(2);
-console.log(over);
+let discountOver = (ticket / 100) * 40;
+discountOver = discountOver.toFixed(2);
+let over = ticket - discountOver;
+// console.log(over);
 
 // Stampa del prezzo
 if (age >= 18 && age <= 65) {
